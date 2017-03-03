@@ -1,0 +1,14 @@
+<h1 class="bigtitle"> Welcome to the message board </h1>
+
+<hr>
+
+<h2 class="subheading"> Past questions </h2>
+
+<div class="row">
+  <ul class="questiondisplay col-md-8 col-md-push-2 ">
+    {{#each model.questions as |question|}}
+      {{question-tile question=question}}
+    {{/each}}
+  </ul>
+</div>
+{{new-question saveQuestion2="saveQuestion3"}}
