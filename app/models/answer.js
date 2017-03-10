@@ -5,5 +5,6 @@ export default DS.Model.extend({
   content: DS.attr(),
   question: DS.belongsTo('question', { async: true }),
   thumbsup: DS.attr(),
-  thumbsdown: DS.attr()
+  thumbsdown: DS.attr(),
+  difference: DS.attr()
 });

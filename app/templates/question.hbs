@@ -1,7 +1,14 @@
-{{question-detail question=model}}
+<div class="row">
+  {{question-detail question=model}}
+</div>
+<div class="row">
+  {{update-question question=model update="update"}}
+</div>
 
-{{update-question question=model update="update"}}
+<div class="row">
+  {{new-answer saveAnswer="saveAnswer" question=model}}
+</div>
 
-{{new-answer saveAnswer="saveAnswer" question=model}}
-
-{{answer-tile thumbs_up="thumbs_up" thumbs_down="thumbs_down" question=model}}
+<div class="row">
+  {{answer-tile thumbs_up="thumbs_up" thumbs_down="thumbs_down" question=model}}
+</div>

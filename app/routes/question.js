@@ -4,6 +4,7 @@ export default Ember.Route.extend({
   model(params) {
     return this.store.findRecord('question', params.question_id);
   },
+
   actions: {
     update(question, params) {
       Object.keys(params).forEach(function(key) {
@@ -18,12 +19,14 @@ export default Ember.Route.extend({
       var current = parseInt(thumbsup);
       current++;
       answer.set("thumbsup",current);
+      answer.set("difference",parseInt(answer.get("difference")+1));
       answer.save();
     },
     thumbs_down(thumbsdown, answer){
       var current = parseInt(thumbsdown);
       current--;
       answer.set("thumbsdown",current);
+      answer.set("difference",parseInt(answer.get("difference")-1));
       answer.save();
     },
     saveAnswer(params) {

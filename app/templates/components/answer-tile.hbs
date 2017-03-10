@@ -1,6 +1,6 @@
 <h2 class="subheading"> Answers </h2>
 <ul>
-  {{#each question.answers as |answer|}}
+  {{#each sortedAnswers as |answer|}}
     <div class="answers">
       <p><span class="user">User {{answer.author}} replied:</span> {{answer.content}}</p>
       <button class="btn" {{action 'thumbs_up' answer.thumbsup answer}}>Thumbs Up! {{answer.thumbsup}}</button>

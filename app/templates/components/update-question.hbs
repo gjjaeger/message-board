@@ -1,3 +1,4 @@
+
 {{#if updateQuestionForm}}
   <h4>Update {{question.author}}'s question</h4>
   <div>
@@ -16,7 +17,7 @@
         <label for="additional_Notes">Additional Notes: </label>
         {{input value=additional_Notes id="additional_Notes" placeholder=question.additional_Notes}}
       </div>
-      <button class="btn" {{action 'update' question}}>Save</button>
+        <button class="btn" {{action 'update' question}}>Save</button>
     </form>
   </div>
 {{else}}

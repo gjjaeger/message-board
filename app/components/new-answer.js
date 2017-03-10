@@ -12,7 +12,8 @@ export default Ember.Component.extend({
        content: this.get('content'),
        question: this.get('question'),
        thumbsup: 0,
-       thumbsdown: 0
+       thumbsdown: 0,
+       difference:parseInt(0)
      };
      this.set('addNewAnswer', false);
      this.sendAction('saveAnswer', params);
