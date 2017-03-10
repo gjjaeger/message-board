@@ -1,0 +1,6 @@
+<h1>Your Favorites</h1>
+{{#each favoriteList.items as |item|}}
+  <div class="row">
+    {{item.author}} -- {{item.content}}
+  </div>
+{{/each}}

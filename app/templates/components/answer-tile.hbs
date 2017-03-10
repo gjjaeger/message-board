@@ -5,6 +5,7 @@
       <p><span class="user">User {{answer.author}} replied:</span> {{answer.content}}</p>
       <button class="btn" {{action 'thumbs_up' answer.thumbsup answer}}>Thumbs Up! {{answer.thumbsup}}</button>
       <button class="btn" {{action 'thumbs_down' answer.thumbsdown answer}}>Thumbs Down! {{answer.thumbsdown}}</button>
+      {{creation-date answer}}
     </div>
   {{/each}}
 </ul>

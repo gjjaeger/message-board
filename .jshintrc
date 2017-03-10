@@ -2,7 +2,8 @@
   "predef": [
     "document",
     "window",
-    "-Promise"
+    "-Promise",
+    "moment"
   ],
   "browser": true,
   "boss": true,
@@ -14,6 +15,7 @@
   "forin": false,
   "immed": false,
   "laxbreak": false,
+  "moment": true,
   "newcap": true,
   "noarg": true,
   "noempty": false,
